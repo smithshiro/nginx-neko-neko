@@ -62,3 +62,4 @@ server {
 - Install PHP-fpm
 - Allow PHP-fpm to use SQLite
 - Perform the above Nginx settings
+- Create sqlite file in "/src/sqlite/database.sqlite3".
