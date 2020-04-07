@@ -1,11 +1,4 @@
 <?php
-session_start();
-if (!isset($_SESSION['count'])) {
-    $_SESSION['count'] = 0;
-} else {
-    $_SESSION['count']++;
-}
-$access_count = $_SESSION['count'];
 ?>
 <!doctype html>
 <html>
@@ -26,18 +19,9 @@ $access_count = $_SESSION['count'];
         <div class="cat">
           <img src="/image/sample.jpg" />
           <div class="reply js-view-reply">
-            <p><?php echo $access_count; ?>回目のアクセスにゃ</p>
+            <p>管理ページにゃ</p>
           </div>
         </div>
-      </div>
-      <div>
-        <form method="POST" class="js-form form">
-          <input type="text" name="name" value="名無しの猫" class="name" />
-          <textarea type="text" name="comment" class="comment"></textarea>
-          <input type="submit" class="submit-button" value="投稿" />
-        </form>
-      </div>
-      <div class="js-load-posts post-rows">
       </div>
     </div>
   </body>
